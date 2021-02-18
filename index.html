@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Library App using Classes JS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="intro">Welcome to your Library</h1>
+        <div class="addBooks">
+            <button class="addBookButton">add books to library</button>
+        </div>
+        <div class="viewBooks">
+            <button class="openLibrary">view stored books</button>
+        </div>
+        <div class="bookForm">
+            <h2 class="enterDetails">Enter Book Details <span class="material-icons" title="close form">close</span></h2>
+            <form class="booksToAdd">
+                <label for="title">Book Title:</label>
+                <input type="text" name="title" id="title"> <br>
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author"> <br>
+                <label for="pages">Pages:</label>
+                <input type="text" name="pages" id="pages"> <br>
+                <label for="read">Read:</label>
+                <input type="radio" name="read" id="read" value="read"> <br>
+                <label for="read">Not Read:</label>
+                <input type="radio" name="read" id="notRead" value="notRead"> <br>
+                <input type="submit" value="save entry">
+            </form>
+        </div>
+        <div class="bookCards">
+            <img src="book-covers-big-2019101610.jpg" alt="bookcover img">
+            <div class="cardContainer">
+                <h2 class="title1">title here</h2>
+                <h3 class="auth">author here</h3>
+                <h3 class="pags">pages here</h3>
+                <h3 class="readIt">read or not</h3>
+                <button class="deleteBook">Remove</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
