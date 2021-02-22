@@ -82,11 +82,16 @@ input[type=submit]{
 }
 /* book cards view code */
 .bookCards{
+    grid-column: 2/4;
+    grid-row: 2/4;
     display: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 50%;
-    background: rosybrown;
+    /* background: #bc8f8f; */
+    justify-self: center;
+    align-self: center;
+    border: black 5px solid;
 }
 .bookCards:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -94,11 +99,15 @@ input[type=submit]{
 img{
     width: 100%;
     border-radius: 5px 5px 0 0;
+    grid-column: 2/3;
 }
 .cardContainer{
     padding: 2px 16px;
+    text-align: center;
+    grid-column: 2/3;
+    background-color: #bc8f8f;
 }
 .deleteBook {
     text-align: center;
-    margin-left: 25%;
+    /* margin-left: 25%; */
 }
